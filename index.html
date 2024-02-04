@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Post Office App</title>
+</head>
+
+<body>
+
+    <main id="root_container">
+        <!-- Landing page of website -->
+        <div id="get_started_section">
+            <div id="left_container">
+                <h1>Post Office Application.</h1>
+                <p>This Application Allows you to extract information about the nearest Post Offices, based on your
+                    location.</p>
+                <img src="./assets/undraw_messenger_re_8bky 1.png" alt="">
+            </div>
+            <div id="right_container">
+                <h1>Your Current IP Address is <span style="color: #ffffff;"></span></h1>
+                <button id="get_started_btn">Get Started</button>
+            </div>
+        </div>
+
+        <!-- main page -->
+        <div id="main_section">
+
+            <!-- user details container -->
+            <div id="user_details">
+
+            </div>
+
+            <!-- map container for google map -->
+            <div id="map_container">
+                <h1>Your Current Location</h1>
+            </div>
+
+            <!-- More info section -->
+            <div id="more_info">
+                <h1>More Information About You</h1>
+
+            </div>
+
+            <!-- Post Office section -->
+            <div id="post_office_container">
+                <h1>Post Offices Near You</h1>
+
+                <!-- search section for searching post office  -->
+                <div id="search">
+                    <svg width="2vw" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M29.592 25.9369L23.7498 20.0957C23.4861 19.832 23.1286 19.6856 22.7536 19.6856H21.7985C23.4158 17.6174 24.3768 15.0161 24.3768 12.1863C24.3768 5.45455 18.9213 0 12.1884 0C5.45548 0 0 5.45455 0 12.1863C0 18.9181 5.45548 24.3726 12.1884 24.3726C15.0187 24.3726 17.6204 23.4118 19.6889 21.7947V22.7497C19.6889 23.1247 19.8354 23.4821 20.0991 23.7457L25.9414 29.587C26.4922 30.1377 27.3829 30.1377 27.9278 29.587L29.5862 27.9289C30.137 27.3782 30.137 26.4876 29.592 25.9369ZM12.1884 19.6856C8.04551 19.6856 4.68784 16.3343 4.68784 12.1863C4.68784 8.04414 8.03965 4.68704 12.1884 4.68704C16.3313 4.68704 19.6889 8.03828 19.6889 12.1863C19.6889 16.3285 16.3371 19.6856 12.1884 19.6856Z"
+                            fill="#B8BCCC" />
+                    </svg>
+
+                    <input id="search_input" type="text" placeholder="Search By Name">
+                </div>
+
+                <!-- Post offices container for all post office -->
+                <div id="post_offices">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
